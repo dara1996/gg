@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaraCafe | Home</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/variable.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.header-mobile-menu-icon').click(function(){
+                smoothAnimate('0','display','block');
+                $('.header-mobile-menu-close-icon').show();
+            });
+
+            $('.header-mobile-menu-close-icon').click(function(){
+                smoothAnimate('-200','display','none');
+                $(this).hide();
+            }); 
+
+            function smoothAnimate(px,property,value){
+                $('.header-mobile-sidebar').animate({
+                    left: px + 'px'
+                },300); 
+                $('.header-mobile-sidebar').css(property,value);
+            }                
+        });
+    </script>
+</head>
+<body>
+<div class="header">     
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2 col-md-2 col-lg-2 header-logo">
+                <a href="index.html"><img src="images/logo.png" alt=""></a>
+            </div>
+            <div class="col-sm-7 col-md-6 col-lg-7 header-search">
+                <div class="header-inner-search"> 
+                    <input type="text" placeholder="Search...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-4 col-lg-3 header-login-cart">
+                <a href="#">Login <i class="fas fa-user"></i></a>
+                <a href="#">Cart <i class="fas fa-cart-plus"></i> 0</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="header-mobile-menu">
+    <span class="header-mobile-menu-icon"><i class="fas fa-bars"></i></span>
+    <div class="header-mobile-logo">
+        <a href="index.html"><img src="images/logo.png" alt=""></a>
+    </div>
+    <div class="header-mobile-sidebar" style="
+    background:url('images/bgmobile.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    ">
+        <ul>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">shop <i class="fas fa-caret-down"></i></a></li>
+        </ul>
+    </div>
+    <span class="header-mobile-menu-close-icon"><i class="fas fa-times"></i></span>
+</div>
+
+<!-- section 1 -->
+<div class="section1" style="
+    background:url('images/coffee_background.jpg');">
+    <div class="overlay"></div>
+    <div class="menu">
+        <ul>
+            <li><a href="menu.html">menu</a></li>
+            <li><a href="services.html">services</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">shop <i class="fas fa-caret-down"></i></a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Welcome to LaraCafe</h1>
+        <div class="content-button">
+            <span><a href="#">View</a></span>
+            <span><a href="#">Order</a></span>
+        </div>
+    </div>
+</div>
+
+<!-- section 2 -->
+<div class="section2" style="background:url('images/bgdark.jpg')">
+    <div class="product-content">
+        <h3>Discover</h3>
+        <h1>OUR PRODUCTS</h1>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+    </div>
+    <div class="product-button">
+        <a href="#" class="active">Main Dish</a>
+        <a href="#">Drinks</a>
+        <a href="#">Desserts</a>
+    </div>
+    <div class="product-add-to-cart container">
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+                <img src="images/co1.jpg">
+                <h4>COFFEE CAPUCCINO</h4>
+                <p>A small river named Duden flows by their place and supplies</p>
+                <span class="product-add-to-cart-price">$5.90</span>
+                <br><br>
+                <span class="product-add-to-cart-button"><a href="#">Add to Cart</a></span>
+            </div>
+
+             <div class="col-md-6 col-lg-3">
+                <img src="images/co2.jpg">
+                <h4>COFFEE CAPUCCINO</h4>
+                <p>A small river named Duden flows by their place and supplies</p>
+                <span class="product-add-to-cart-price">$5.90</span>
+                <br><br>
+                <span class="product-add-to-cart-button"><a href="#">Add to Cart</a></span>
+            </div>
+
+             <div class=" col-md-6 col-lg-3">
+                <img src="images/co3.jpg">
+                <h4>COFFEE CAPUCCINO</h4>
+                <p>A small river named Duden flows by their place and supplies</p>
+                <span class="product-add-to-cart-price">$5.90</span>
+                <br><br>
+                <span class="product-add-to-cart-button"><a href="#">Add to Cart</a></span>
+            </div>
+
+             <div class="col-md-6 col-lg-3">
+                <img src="images/co4.jpg">
+                <h4>COFFEE CAPUCCINO</h4>
+                <p>A small river named Duden flows by their place and supplies</p>
+                <span class="product-add-to-cart-price">$5.90</span>
+                <br><br>
+                <span class="product-add-to-cart-button"><a href="#">Add to Cart</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- section 3 -->
+<div class="section3">
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="phone-street-open">
+                <span><i class="fas fa-phone-alt"></i></span>
+                <div class="phone-street-open-content">
+                    <h6>000 (123) 456 7890</h6>
+                    <p>A small river named Duden flows by their place and supplies.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="phone-street-open">
+                <span><i class="fas fa-map-marker-alt"></i></span>
+                <div class="phone-street-open-content">
+                    <h6>198 West 21th Street</h6>
+                    <p>203 Fake St. Mountain View, San Francisco, California, USA</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="phone-street-open">
+                <span><i class="far fa-clock"></i></span>
+                <div class="phone-street-open-content">
+                    <h6>Open Monday-Friday</h6>
+                    <p>8:00am - 9:00pm</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="section4" style="background:url('images/bg_1.jpg')">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2 appointment">
+            <h3 class="mb-3">Book a Table</h3>
+                    <form action="#" class="appointment-form">
+                        <div class="d-md-flex">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="First Name">
+                            </div>
+                            <div class="form-group ml-md-4">
+                                <input type="text" class="form-control" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="d-md-flex">
+                            <div class="form-group">
+                                <div class="input-wrap">
+                            <input type="text" class="form-control" placeholder="Date">
+                        </div>
+                            </div>
+                            <div class="form-group ml-md-4">
+                                <div class="input-wrap">
+                            <input type="text" class="form-control" placeholder="Time">
+                        </div>
+                            </div>
+                            <div class="form-group ml-md-4">
+                                <input type="text" class="form-control" placeholder="Phone">
+                            </div>
+                        </div>
+                        <div class="d-md-flex">
+                            <div class="form-group">
+                      <textarea name="" id="" cols="30" rows="2" class="form-control" placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-group ml-md-4">
+                      <input type="submit" value="Appointment" class="btn py-3 px-4">
+                    </div>
+                        </div>
+                    </form>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="section5">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h5>ABOUT US</h5>
+            <P>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</P>
+            <div class="footer-social-media">
+                <span><a href="#"><i class="fab fa-twitter"></i></a></span>
+                <span><a href="#"><i class="fab fa-facebook"></i></a></span>
+                <span><a href="#"><i class="fab fa-instagram"></i></a></span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h5>SERVICES</h5>
+            <ul>
+                <li><a href="#">Cooked</a></li>
+                <li><a href="#">Deliver</a></li>
+                <li><a href="#">Quality Foods</a></li>
+                <li><a href="#">Mixed</a></li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h5>HAVE A QUESTIONS?</h5>
+            <div class="footer-street-phone-email">
+                <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+                <br><br>
+                <span>+2 392 3929 210</span>
+                <br><br>
+                <span>info@yourdomain.com</span>
+            </div>
+        </div>
+    </div>
+
+    <h6>Copyright ©2020 All rights reserved | This template is made with  by Colorlib</h6>
+</div>
+</div>
+
+</body>
+</html>

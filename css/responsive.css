@@ -1,0 +1,146 @@
+/* large devices (desktops, 992px and up) */
+@media(min-width:992px) and (max-width:1199.98px){
+	.product-add-to-cart img{
+    	width:230px;
+    	height:200px;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media(min-width:768px) and (max-width:991.98px){
+	.content h1{
+  	  font-size:30px;
+	}
+	.product-add-to-cart img{
+		margin-top:20px;
+	}
+	.product-content{
+	 	padding-right:10px;
+	 	padding-left:10px;
+	 }
+
+	 .header-login-cart a{
+		margin:0px 3px;
+		padding:2px 3px;
+	}
+}
+
+/* smalll devices (landscape phones, 576px and up) */
+@media(min-width:576px) and (max-width:767.98px){
+	.header,.menu{
+		display:none;
+	}
+	.content h1{
+  	  font-size:25px;
+	}
+	.header-mobile-menu{
+		display:block;
+	}
+	.product-add-to-cart img{
+		margin-top:20px;
+	}
+
+	.section3{
+		padding:30px 0px 30px 20px;
+	}
+	.product-content{
+	 	padding-right:10px;
+	 	padding-left:10px;
+	 }
+
+	 .menu-section2 .wrap{  
+		flex-direction:column;
+	}
+
+	.menu-section2 .wrap .info{
+	align-self:start;
+	width:100%;
+	} 
+
+	.menu-section2 .wrap .book {
+		align-self:center;
+	    width: 90%;
+	    background: #c49b63; 
+	    box-sizing:border-box;
+	    z-index:1;
+	}
+
+	.pages-content h1{
+		font-size:25px;
+	}
+
+	.services-section1{
+		height:100%;
+	    flex-direction:column;
+	    padding:10% 5%;
+	}
+
+	.service-info{
+		margin-bottom:20px;
+	}
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media(max-width:575.98px){
+	.header,.menu{
+		display:none;
+	}
+	.content h1{
+  	  font-size:18px;
+  	  width:200px;
+	}
+	.header-mobile-menu{
+		display:block;
+	}
+	.product-add-to-cart img{
+		margin-top:20px;
+	}
+	.section3{
+		padding:30px 0px 30px 20px;
+	}
+	 .footer-social-media{
+	 	margin-bottom:10px;
+	}
+
+	.product-content{
+	 	padding-right:10px;
+	 	padding-left:10px;
+	 }
+	 .product-content h1{
+	 	font-size:25px;
+	 }
+	 
+
+	 .menu-section2 .wrap{  
+		flex-direction:column;
+	}
+
+	.menu-section2 .wrap .info{
+	align-self:start;
+	width:100%;
+	padding-top:20px;
+	} 
+
+	.menu-section2 .wrap .book {
+		align-self:center;
+	    width: 90%;
+	    background: #c49b63; 
+	    box-sizing:border-box;
+	    z-index:1;
+	}
+
+	.pages-content h1{
+		font-size:20px;
+	}
+
+	.services-section1{
+		height:100%;
+	    flex-direction:column;
+	    padding:10% 5%;
+	}
+
+	.service-info{
+		margin-bottom:20px;
+	}
+
+}
