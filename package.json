@@ -1,0 +1,24 @@
+{
+  "name": "gg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dara1996/lyly.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/dara1996/gg.git",
+  "bugs": {
+    "url": "https://github.com/dara1996/lyly/issues"
+  },
+  "homepage": "https://github.com/dara1996/lyly#readme",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
